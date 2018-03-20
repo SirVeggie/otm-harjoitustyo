@@ -102,4 +102,4 @@ Date:   Tue Mar 20 23:19:17 2018 +0200
     tiedosto.txt luotu
 
  tiedosto.txt | 0
- 1 file changed, 0 insertions(+), -100 deletions(-)
+ 1 file changed, 0 insertions(+), 0 deletions(-)
