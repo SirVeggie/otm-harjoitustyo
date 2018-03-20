@@ -7,4 +7,4 @@ this **line of text**.
 [komentorivi.txt](https://github.com/SirVeggie/otm-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)\
 [gitlog.txt](https://github.com/SirVeggie/otm-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)\
 \
-Check out these links, they will change everything.
+Check out these links, they will change everything... The entire world is at stake.
