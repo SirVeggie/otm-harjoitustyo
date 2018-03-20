@@ -1,0 +1,105 @@
+commit 140eb5889d0a637699643cb2697f9357dbbe35c8
+Author: SirVeggie <sirveggie@hotmail.com>
+Date:   Tue Mar 20 23:34:36 2018 +0200
+
+    muutoksia
+
+ tiedostoja/file1  | 0
+ tiedostoja/file2  | 0
+ tiedostoja/file22 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 84c8c78f00ee1c5092d0e01557f46bb7388221fa
+Author: SirVeggie <sirveggie@hotmail.com>
+Date:   Tue Mar 20 23:33:31 2018 +0200
+
+    tiedostoja
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit cad1b8afea6a2e9bc72e2e6cc008cd77d292b024
+Author: SirVeggie <sirveggie@hotmail.com>
+Date:   Tue Mar 20 23:30:30 2018 +0200
+
+    lol
+
+ eka.txt      | 5 +++++
+ tiedosto.txt | 5 -----
+ 2 files changed, 5 insertions(+), 5 deletions(-)
+
+commit e7fafaa7c45c76733b593fd3c8e46722125f00cc
+Author: SirVeggie <sirveggie@hotmail.com>
+Date:   Tue Mar 20 23:29:06 2018 +0200
+
+    poisto
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 9b19400dd4e4784efd168940628bdc403d0ef0c7
+Author: SirVeggie <sirveggie@hotmail.com>
+Date:   Tue Mar 20 23:28:27 2018 +0200
+
+    lisää
+
+ tiedosto.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit dc87c20449c63e9e809aa3326a6d50727734ae50
+Author: SirVeggie <sirveggie@hotmail.com>
+Date:   Tue Mar 20 23:27:30 2018 +0200
+
+    textiä
+
+ tiedosto.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit b430168a7fa3516dd326fed414613ae00aeb489d
+Author: SirVeggie <sirveggie@hotmail.com>
+Date:   Tue Mar 20 23:26:15 2018 +0200
+
+    uusi directory
+
+ stuff/tiedostoX.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 95f72b164e7bb73479f6f12996b9a11f00ffb2ed
+Author: SirVeggie <sirveggie@hotmail.com>
+Date:   Tue Mar 20 23:25:08 2018 +0200
+
+    uusi commit toinen ja kolmas muutos
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 4107e959dd983c5f21c7b5d30c74c582f953f74b
+Author: SirVeggie <sirveggie@hotmail.com>
+Date:   Tue Mar 20 23:24:10 2018 +0200
+
+    kolmas commit
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit d1095a8dff07bcf232c5169ea6bf916a937357e1
+Author: SirVeggie <sirveggie@hotmail.com>
+Date:   Tue Mar 20 23:21:45 2018 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit bc4ff548b33312a903c5b2d61623352d6684241b
+Author: SirVeggie <sirveggie@hotmail.com>
+Date:   Tue Mar 20 23:19:17 2018 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
