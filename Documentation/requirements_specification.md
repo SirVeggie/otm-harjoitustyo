@@ -1,4 +1,4 @@
-# requirements specification
+# Requirements specification
 
 ## Purpose
 
