@@ -28,7 +28,7 @@ Player - Normal rights, can only play the game within its restricted environment
 
 ### Settings
 
-- You can turn on/off developer(testing) mode
+- (?)You can turn on/off developer(testing) mode
 - (?) Change difficulty
 
 ### Gameplay
