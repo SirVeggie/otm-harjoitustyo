@@ -11,7 +11,6 @@ Check out these links, they will change everything... The entire world is at sta
 
 ## More information
 [Tuntikirjanpito](https://github.com/SirVeggie/otm-harjoitustyo/blob/master/tuntikirjanpito.md)\
-
 \
 \
 More to come...
