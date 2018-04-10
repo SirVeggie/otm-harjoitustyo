@@ -1,5 +1,6 @@
 
 import carrots.TurtleRace.Menu;
+import java.util.Scanner;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -15,8 +16,10 @@ public class MainTest {
     
     @Test
     public void test1() {
-        Menu menu2 = new Menu();
+        Menu menu = new Menu(new Scanner(System.in));
         
-        assertEquals(menu2.getDifficulty(), 1);
+        assertEquals(menu.getDifficulty(), 2);
     }
+    
+    
 }
