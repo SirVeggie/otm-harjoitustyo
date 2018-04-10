@@ -12,13 +12,13 @@ Player - Normal rights, can only play the game within its restricted environment
 
 ## Interface
 
-Main Screen--
-  Play
-  Settings
+--Main Screen--\
+  Play\
+  Settings\
   Exit
 
 
-Settings\
+--Settings--\
   something...
 
 ## Basic functionality
