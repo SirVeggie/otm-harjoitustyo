@@ -24,7 +24,7 @@ Eventually graphical interface...
 
 
 --Settings--\
-  (?) You can turn on/off developer(testing) mode\
+  (?) Developer mode\
   (?) Change difficulty
 
 ## Basic functionality
@@ -46,4 +46,4 @@ Eventually graphical interface...
 
 - Leaderboard
 - Statistics
-- 
+- ...
