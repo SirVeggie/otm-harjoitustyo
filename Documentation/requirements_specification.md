@@ -37,5 +37,10 @@ Player - Normal rights, can only play the game within its restricted environment
 - Effects can be for example changes to the turtle's linear speed or cause sudden changes to occur, maybe even affect other turtles.
 - Effects can be positive or negative.
 - The amount of negative and positive effects should be close to each other.
+- Rewards are given based on performance.
 
 ## Improvement ideas
+
+- Leaderboard
+- Statistics
+- 
