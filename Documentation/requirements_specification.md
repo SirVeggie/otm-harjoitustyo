@@ -24,7 +24,8 @@ Eventually graphical interface...
 
 
 --Settings--\
-  Something...
+  (?) You can turn on/off developer(testing) mode
+  (?) Change difficulty
 
 ## Basic functionality
 
