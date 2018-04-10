@@ -25,7 +25,7 @@ Eventually graphical interface...
 
 --Settings--\
   (?) Developer mode\
-  (?) Change difficulty
+  (?) Difficulty
 
 ## Basic functionality
 
