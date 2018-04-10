@@ -15,6 +15,8 @@ Player - Normal rights, can only play the game within its restricted environment
 
 ## Interface
 
+Eventually graphical interface...
+
 --Main Screen--\
   Play\
   Settings\
@@ -22,7 +24,7 @@ Player - Normal rights, can only play the game within its restricted environment
 
 
 --Settings--\
-  something...
+  Something...
 
 ## Basic functionality
 
