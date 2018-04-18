@@ -7,6 +7,8 @@ A game about racing turtles. You as the player are provided background informati
 
 [Requirements specification](https://github.com/SirVeggie/otm-harjoitustyo/blob/master/Documentation/requirements_specification.md)
 
+[Architecture](https://github.com/SirVeggie/otm-harjoitustyo/blob/master/Documentation/architecture.md)
+
 
 ## Command line actions
 
