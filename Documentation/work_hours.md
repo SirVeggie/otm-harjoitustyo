@@ -8,9 +8,9 @@
 |       | 1     | Adding testing and jacoco report |
 | 18.4. | 2     | Learning and implementing javaFX |
 |       | 1     | Restructuring the game |
-|       | 1     | Implementing basic DAO |
+|       | 1     | Implementing basic DAO, adding Checkstyle |
 |       | -     | xxx |
 |       | -     | xxx |
 |       | -     | xxx |
 |       | -     | xxx |
-| yht   | -     |     | 
+| yht   | 11    |     | 
