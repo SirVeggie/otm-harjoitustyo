@@ -21,7 +21,7 @@ mvn test
 Test coverage report:
 
 ```
-mvn jacoco:report
+mvn test jacoco:report
 ```
 
 The report can be found in here: target/site/jacoco/index.html
@@ -36,4 +36,8 @@ incomplete...
 
 ### Checkstyle
 
-incomplete...
+Checkstyle command:
+
+```
+mvn jxr:jxr checkstyle:checkstyle
+```
