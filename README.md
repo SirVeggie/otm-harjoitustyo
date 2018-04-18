@@ -36,4 +36,8 @@ incomplete...
 
 ### Checkstyle
 
-incomplete...
+Checkstyle command:
+
+```
+mvn jxr:jxr checkstyle:checkstyle
+```
