@@ -1,4 +1,4 @@
-package carrots.TurtleRace;
+package turtlerace.ui;
 
 import java.util.Scanner;
 
@@ -6,13 +6,13 @@ import java.util.Scanner;
  *
  * @author SirVeggie
  */
-public class Menu {
+public class Launcher {
     // Difficulty 1-3
     private int difficulty;
     private boolean developerMode;
     private Scanner scanner;
     
-    public Menu(Scanner scanner) {
+    public Launcher(Scanner scanner) {
         this.difficulty = 2;
         this.developerMode = false;
         this.scanner = scanner;
@@ -27,7 +27,7 @@ public class Menu {
     }
     
     
-    public int enterMenu() {
+    public int enterLauncher() {
         int input = 0;
         
   menu: while (true) {
@@ -35,7 +35,7 @@ public class Menu {
             
             System.out.println("Welcome to the Turtle Race");
             System.out.println("");
-            System.out.println("~ Play[1] ~");
+            System.out.println("~ Start[1] ~");
             System.out.println("~ Settings[2] ~");
             System.out.println("~ Exit[3] ~");
             System.out.println("");
