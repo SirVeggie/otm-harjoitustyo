@@ -7,25 +7,16 @@ A game that provides entertainment for people that have nothing better to do.
 The game is about turtle races. You try to guess which turtle will win the race based on the provided information. 
 Ideally the player can learn the effects of each piece of information and estimate the winner based on them with 100% accuracy.
 
-## Users
-
-Player - Normal rights, can only play the game within its restricted environment.
-
-(Maybe) Tester/Developer - Has improved rights to access cheats and tools to test how the game works.
 
 ## Interface
 
-Eventually graphical interface...
+- Main screen / main menu
+- Highscore screen
+- Name choosing screen
+- Statistics screen
+- Racing screen
 
---Main Screen--\
-  Play\
-  Settings\
-  Exit
-
-
---Settings--\
-  (?) Developer mode\
-  (?) Difficulty
+<img src="https://github.com/SirVeggie/otm-harjoitustyo/blob/master/Documentation/Pictures/Interface.png">
 
 ## Basic functionality
 
