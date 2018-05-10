@@ -27,7 +27,7 @@ Ideally the player can learn the effects of each piece of information and estima
 - A session of gameplay can be created with a chosen name.
 - A name that already exists in the highscore list can not be used.
 - The name will be saved along with the session's highest score into the highscore list when exiting the session.
-- Current session's scores can be check from the statistics section.
+- Current session's scores can be checked from the statistics section.
 
 ### Gameplay
 
