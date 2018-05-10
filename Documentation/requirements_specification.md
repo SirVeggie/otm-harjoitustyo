@@ -19,23 +19,24 @@ Ideally the player can learn the effects of each piece of information and estima
 
 <img src="https://github.com/SirVeggie/otm-harjoitustyo/blob/master/Documentation/Pictures/Interface.png">
 
-## Basic functionality
+When entering a new session, you cannot use a name someone else has already used.
 
-### Settings
+## Functionality
 
-- (?) You can turn on/off developer(testing) mode
-- (?) Change difficulty
+### Menus
+
+- Highscores of themselves or other people can be checked or reset.
+- A session of gameplay can be created with a chosen name.
+- A name that already exists in the highscore list can not be used.
+- The name will be saved along with the session's highest score into the highscore list when exiting.
+- Current session's scores can be check from the statistics section.
 
 ### Gameplay
 
-- Each turtle has a limited amount of information attached to them, which will determine how fast the turtle will proceed towards the goal.
-- Effects can be for example changes to the turtle's linear speed or cause sudden changes to occur, maybe even affect other turtles.
-- Effects can be positive or negative.
-- The amount of negative and positive effects should be close to each other.
-- Rewards are given based on performance.
+- Each turtle has 4 pieces of information attached to them, which will determine how fast the turtle will proceed towards the goal.
+- These attributes will be randomized.
+- Attributes can for example change the turtle's linear speed or cause sudden changes to occur.
+- Attribute categories are; Ability, Item, Temper and Handicap.
+- There are 5 abilities, 4 items, 3 tempers and 5 handicaps.
 
-## Improvement ideas
-
-- Leaderboard
-- Statistics
-- ...
+- LOL
