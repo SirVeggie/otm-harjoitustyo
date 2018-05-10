@@ -37,12 +37,11 @@ Ideally the player can learn the effects of each piece of information and estima
 - Attribute categories are; Ability, Item, Temper and Handicap.
 - Each turtle will have one of each attributes.
 - There are 5 abilities, 4 items, 3 tempers and 5 handicaps.
-
-
 - Each game lasts 5 rounds.
-- Each round money is bet on a single turtle out of 5. (Support for varied amount of turtles is possible with minor changes)
+- Each round money is bet on a single turtle out of 5.
 - The bet amount cannot exceed the current amount of money.
 - If the bet succeeds, the player is given back the lost bet money and awarded twice the amount of the bet.
 - If money reaches zero at the end of a round, the player loses and receives the score of 0.
 - After a race it is possible to investigate the results before continuing to the next round.
 - After the game the player is notified of their final score.
+- The number of turtles and rounds is fixed to maintain a competetive aspect.
