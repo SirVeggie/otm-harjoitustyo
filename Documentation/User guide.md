@@ -30,7 +30,7 @@ In the Game menu you can view your session's scores, or start playing by pressin
 
 To play, type into the box the amount you want to bet, then choose a turtle by pressing one of the buttons below.
 
-Finally, if the bet was valid, you can press the _Start race_ button to start the race, and see if you were correct.
+If the bet was valid, you can press the _Start race_ button to start the race, and see if you were correct.
 
 The game will last 5 rounds.
 
