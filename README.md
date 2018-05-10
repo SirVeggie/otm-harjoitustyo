@@ -9,6 +9,9 @@ A game about racing turtles. You as the player are provided information of the r
 
 [Architecture](https://github.com/SirVeggie/otm-harjoitustyo/blob/master/Documentation/architecture.md)
 
+[Test document](https://github.com/SirVeggie/otm-harjoitustyo/blob/master/Documentation/Test%20document.md)
+
+[User guide](https://github.com/SirVeggie/otm-harjoitustyo/blob/master/Documentation/User%20guide.md)
 
 ## Command line actions
 
