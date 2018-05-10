@@ -1,6 +1,6 @@
 # Turtle Race
 
-A game about racing turtles. You as the player are provided background information of the racing turtles in info snippets, which you are to use to deduce how well each turtle will perform in the race. Your job is to use the information provided to correctly choose the winning turtle.
+A game about racing turtles. You as the player are provided information of the racing turtles, which you are to use to deduce how well each turtle will perform in the race. Essentially to correctly choose the winning turtle.
 
 ## Documentation
 [Work hours](https://github.com/SirVeggie/otm-harjoitustyo/blob/master/Documentation/work_hours.md)
@@ -38,9 +38,15 @@ mvn package
 
 generates the _TurtleRace-1.0-SNAPSHOT.jar_ jar file into the _target_ folder.
 
-### JavaDoc
+### JavaDoc --NOT DONE YET--
 
-incomplete...
+JavaDoc command:
+
+```
+mvn javadoc:javadoc
+```
+
+JavaDocia found in _target/site/apidocs/index.html_
 
 ### Checkstyle
 
