@@ -25,7 +25,7 @@ When entering a new session, you cannot use a name someone else has already used
 
 ### Menus
 
-- Highscores of themselves or other people can be checked or reset.
+- Highscores of previous games are shown.
 - A session of gameplay can be created with a chosen name.
 - A name that already exists in the highscore list can not be used.
 - The name will be saved along with the session's highest score into the highscore list when exiting.
