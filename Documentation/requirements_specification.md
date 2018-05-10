@@ -19,8 +19,6 @@ Ideally the player can learn the effects of each piece of information and estima
 
 <img src="https://github.com/SirVeggie/otm-harjoitustyo/blob/master/Documentation/Pictures/Interface.png">
 
-When entering a new session, you cannot use a name someone else has already used.
-
 ## Functionality
 
 ### Menus
