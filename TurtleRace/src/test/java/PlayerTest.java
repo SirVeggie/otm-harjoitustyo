@@ -1,6 +1,4 @@
 
-import turtlerace.ui.Launcher;
-import java.util.Scanner;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
