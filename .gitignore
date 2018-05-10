@@ -1,3 +1,5 @@
 */target/**
 /target/
 /TurtleRace/nbproject/
+*.db
+sqlite3.exe
