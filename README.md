@@ -41,7 +41,7 @@ mvn package
 
 generates the _TurtleRace-1.0-SNAPSHOT.jar_ jar file into the _target_ folder.
 
-### JavaDoc --NOT DONE YET--
+### JavaDoc
 
 JavaDoc command:
 
