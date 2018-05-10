@@ -34,12 +34,11 @@ public class Turtle {
         distance = value;
     }
     
-    public void addDistance(int value) {
-        distance += value;
-    }
     
-    
-    
+    /**
+     * Compiles the turtle's attributes/info into a single string.
+     * @return Returns the turtle's attributes/information as a string.
+     */
     public String getDescription() {
         String desc = "";
         

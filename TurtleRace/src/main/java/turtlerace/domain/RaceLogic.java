@@ -8,7 +8,12 @@ public class RaceLogic {
     private int step;
     
     
-    // Move turtle according to it's attributes
+    /**
+     * Moves the given turtle according to it's attributes.
+     * @param step Current "time" in the race
+     * @param turtle The turtle that is moved
+     * @return Returns the amount the turtle should be moved.
+     */
     public int moveTurtle(int step, Turtle turtle) {
         this.turtle = turtle;
         this.step = step;
@@ -165,23 +170,23 @@ public class RaceLogic {
     private void advantage5() {
         if (turtle.support == 2) {
             if (step == 40) {
-                moveAmount = 60;
+                moveAmount = 80;
             }
             if (step == 41) {
-                moveAmount = 60;
+                moveAmount = 80;
             }
             return;
         }
         
         if (turtle.neutral == 1) {
             if (step == 40) {
-                moveAmount = 100;
+                moveAmount = 120;
             }
             return;
         }
         
         if (step == 40) {
-            moveAmount = 60;
+            moveAmount = 80;
         }
     }
     

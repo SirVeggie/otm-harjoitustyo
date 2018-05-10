@@ -1,9 +1,6 @@
 package turtlerace.domain;
 
-import java.sql.SQLException;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import turtlerace.dao.Database;
 import turtlerace.dao.HighscoreDao;
 
@@ -25,14 +22,9 @@ public class Logic {
     private HighscoreDao scoreDao;
     
     
-    
     public Logic() {
-        try {
-            database = new Database("jdbc:sqlite:gamedb.db");
-            database.checkDatabaseValidity();
-        } catch (Exception ex) {
-            //Logger.getLogger(Logic.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        database = new Database("jdbc:sqlite:gamedb.db");
+        database.checkDatabaseValidity();
         
         scoreDao = new HighscoreDao(database);
         
@@ -41,38 +33,44 @@ public class Logic {
     
     
     
-    // Start a new game with a name
+    /**
+     * Start a new session if the provided name is valid, otherwise does nothing.
+     * @param name Player's name
+     * @return Returns true if it succeeded and false if it failed.
+     */
     public boolean newSession(String name) {
         if (name.length() > 0 && name.length() < 100) {
-            try {
-                if (scoreDao.findOne(name) == null) {
-                    player = new Player(name);
-                    return true;
-                }
-            } catch (SQLException ex) {
-                //Logger.getLogger(Logic.class.getName()).log(Level.SEVERE, null, ex);
+            if (scoreDao.findOne(name) == null) {
+                player = new Player(name);
+                return true;
             }
         }
         
         return false;
     }
     
-    // Exit and save highscore with dao
+    /**
+     * Saves the current highscore of the player to the database, if the name isn't taken yet.
+     */
     public void exitSession() {
-        try {
-            scoreDao.saveOrUpdate(new Highscore(-1, player.getName(), player.getHighscore()));
-        } catch (SQLException ex) {
-            //Logger.getLogger(Logic.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        scoreDao.saveOrUpdate(new Highscore(-1, player.getName(), player.getHighscore()));
     }
     
     // Race specific methods
+    
+    /**
+     * Creates a new race and increases round count. Enables race buttons.
+     */
     public void newRound() {
         race = new Race(5);
         raceReady = true;
         round++;
     }
     
+    /**
+     * Tries to advance to the next round by creating a new race.
+     * @return Return true if the next race was created, and false if the current round is already the last round.
+     */
     public boolean nextRound() {
         
         // Checks if it should continue to the next round
@@ -84,12 +82,18 @@ public class Logic {
         return false;
     }
     
+    /**
+     * Saves the player's score into the player's score list. Resets player's money and round count.
+     */
     public void endRound() {
         player.saveScore();
         player.setMoney(200);
         round = 0;
     }
     
+    /**
+     * Subtracts the betted amount from player's money, enables animation, disables race buttons and resets the animation counter.
+     */
     public void startRace() {
         animate = true;
         raceReady = false;
@@ -97,6 +101,10 @@ public class Logic {
         counter = 0;
     }
     
+    /**
+     * Checks if the bet was correct by comparing it to the winner, and gives player the award. Resets the bet.
+     * @param turtle Winner turtle
+     */
     public void endRace(Turtle turtle) {
         
         if (betTurtle == turtle.getID()) {
@@ -106,7 +114,11 @@ public class Logic {
         bet = 0;
     }
     
-    public boolean checkIfEnoughMoney() {
+    /**
+     * Checks if the player's money is more than 0.
+     * @return Returns true if player has money, and false if he doesn't.
+     */
+    public boolean playerHasMoney() {
         if (player.getMoney() > 0) {
             return true;
         }
@@ -114,6 +126,10 @@ public class Logic {
         return false;
     }
     
+    /**
+     * Calculates the new positions of the turtles and checks if any of them won the race.
+     * @return Returns false if the race continues, and true if the race ended.
+     */
     public boolean raceStep() {
         
         Turtle turtle = race.step();
@@ -181,23 +197,22 @@ public class Logic {
     }
     
     public List<Highscore> getHighscores() {
-        try {
-            return scoreDao.findAll();
-        } catch (SQLException ex) {
-            //Logger.getLogger(Logic.class.getName()).log(Level.SEVERE, null, ex);
-            return null;
-        }
+        return scoreDao.findAll();
     }
     
     // Other logic tools
+    
+    /**
+     * Deletes the old database and creates a new one with the necessary tables.
+     */
     public void resetDatabase() {
-        try {
-            database.resetDatabase();
-        } catch (Exception ex) {
-            //Logger.getLogger(Logic.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        database.resetDatabase();
     }
     
+    /**
+     * Adds one to the counter, then returns the counter value.
+     * @return Returns the current counter value.
+     */
     public int counter() {
         counter++;
         

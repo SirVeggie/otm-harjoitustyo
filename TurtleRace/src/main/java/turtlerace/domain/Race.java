@@ -27,6 +27,10 @@ public class Race {
         raceLogic = new RaceLogic();
     }
     
+    /**
+     * Moves each turtle according to their attributes by changing their progress value (distance). Also checks if the game has ended.
+     * @return If the game ends, the winning turtle is returned. Otherwise returns null.
+     */
     public Turtle step() {
         for (int i = 0; i < turtleList.size(); i++) {
             int distance = distances.get(i);
@@ -40,6 +44,10 @@ public class Race {
         return end();
     }
     
+    /**
+     * Checks whether the race has ended or not.
+     * @return Returns the winning turtle if race ends, else returns null.
+     */
     private Turtle end() {
         for (int i = 0; i < distances.size(); i++) {
             if (distances.get(i) > 400) {

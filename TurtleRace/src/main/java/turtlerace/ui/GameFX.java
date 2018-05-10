@@ -426,7 +426,7 @@ public class GameFX extends Application {
             
             List<Integer> oldScores = logic.getPlayerScores();
             
-            for (int i = 0; i < Math.min(5, oldScores.size()); i++) {
+            for (int i = 0; i < oldScores.size(); i++) {
                 Label score_lbl = new Label("" + oldScores.get(i));
                 
                 statsScores.getChildren().add(score_lbl);
@@ -486,7 +486,7 @@ public class GameFX extends Application {
                 logic.setBet(bet, 1);
                 betReady.setText("Bet is ready");
             } else {
-                betAmount_fld.setText("Not enough money");
+                betAmount_fld.setText("Bad not valid");
             }
         });
         turtle2_btn.setOnAction((ActionEvent event) -> {
@@ -506,7 +506,7 @@ public class GameFX extends Application {
                 logic.setBet(bet, 2);
                 betReady.setText("Bet is ready");
             } else {
-                betAmount_fld.setText("Not enough money");
+                betAmount_fld.setText("Bad not valid");
             }
         });
         turtle3_btn.setOnAction((ActionEvent event) -> {
@@ -526,7 +526,7 @@ public class GameFX extends Application {
                 logic.setBet(bet, 3);
                 betReady.setText("Bet is ready");
             } else {
-                betAmount_fld.setText("Not enough money");
+                betAmount_fld.setText("Bad not valid");
             }
         });
         turtle4_btn.setOnAction((ActionEvent event) -> {
@@ -546,7 +546,7 @@ public class GameFX extends Application {
                 logic.setBet(bet, 4);
                 betReady.setText("Bet is ready");
             } else {
-                betAmount_fld.setText("Not enough money");
+                betAmount_fld.setText("Bad not valid");
             }
         });
         turtle5_btn.setOnAction((ActionEvent event) -> {
@@ -566,7 +566,7 @@ public class GameFX extends Application {
                 logic.setBet(bet, 5);
                 betReady.setText("Bet is ready");
             } else {
-                betAmount_fld.setText("Not enough money");
+                betAmount_fld.setText("Bad not valid");
             }
         });
         
@@ -584,7 +584,7 @@ public class GameFX extends Application {
         });
         
         continueGame.setOnAction((ActionEvent event) -> {
-            if (!logic.checkIfEnoughMoney()) {
+            if (!logic.playerHasMoney()) {
                 finalScore_lbl.setText("Player ran out of money: Score 0");
                 
                 stage.setScene(endScreen);
