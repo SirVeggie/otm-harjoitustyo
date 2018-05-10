@@ -13,6 +13,7 @@ Ideally the player can learn the effects of each piece of information and estima
 - Main screen / main menu
 - Highscore screen
 - Name choosing screen
+- Game menu
 - Statistics screen
 - Racing screen
 
