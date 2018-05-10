@@ -30,7 +30,13 @@ The report can be found in here: target/site/jacoco/index.html
 
 ### Executable jar file
 
-incomplete...
+Jar command:
+
+```
+mvn package
+```
+
+generates the _TurtleRace-1.0-SNAPSHOT.jar_ jar file into the _target_ folder.
 
 ### JavaDoc
 
