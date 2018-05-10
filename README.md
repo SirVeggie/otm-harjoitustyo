@@ -13,6 +13,10 @@ A game about racing turtles. You as the player are provided information of the r
 
 [User guide](https://github.com/SirVeggie/otm-harjoitustyo/blob/master/Documentation/User%20guide.md)
 
+## Releases
+
+[Final product]()
+
 ## Command line actions
 
 ### Testing
