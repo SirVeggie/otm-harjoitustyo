@@ -35,6 +35,7 @@ Ideally the player can learn the effects of each piece of information and estima
 - These attributes will be randomized.
 - Attributes can for example change the turtle's linear speed or cause sudden changes to occur.
 - Attribute categories are; Ability, Item, Temper and Handicap.
+- Each turtle will have one of each attributes.
 - There are 5 abilities, 4 items, 3 tempers and 5 handicaps.
 
 
