@@ -30,8 +30,10 @@ In the Game menu you can view your session's scores, or start playing by pressin
 
 To play, type into the box the amount you want to bet, then choose a turtle by pressing one of the buttons below.
 
+Try to use the provided information to your advantage when placing the bet.
+
 If the bet was valid, you can press the _Start race_ button to start the race, and see if you were correct.
 
 The game will last 5 rounds.
 
-To save your highscore, press the _Exit and save score_ button in the Game menu.
+To save your highscore, press the _Exit and save score_ button in the Game menu after playing. It will save the session's highest score.
