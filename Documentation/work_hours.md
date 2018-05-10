@@ -13,4 +13,9 @@
 |  9.5. | 12    | DAO finished, game logic almost finished, javaFX almost finished |
 | 10.5. |  4    | Game finished, balancing/polishing the game |
 |       |  2    | Checking code requirements and cleaning code |
-| yht   |  ?    |     | 
+|       |  3    | Miscellaneous work / doing a bit of everything |
+|       |  2    | JavaDocs |
+|       |  x    |  |
+|       |  x    |  |
+|       |  x    |  |
+| yht   |  ?    |  | 
