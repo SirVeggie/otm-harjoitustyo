@@ -14,8 +14,14 @@ You can delete the database file whenever to reset your data.
 
 ## How to play
 
-Here's an overview of the game navigation:
+Here's an overview of the navigation inside the game:
 
 <img src="https://github.com/SirVeggie/otm-harjoitustyo/blob/master/Documentation/Pictures/Interface.png">
 
-To play, press _Start a session_.
+To play, press _New session_.
+
+Additionally you can check the highscores.
+
+After pressing _New session_, you will have to choose a unique name.
+
+In the Game menu you can view your session's scores, or start playing by pressing the play button.
