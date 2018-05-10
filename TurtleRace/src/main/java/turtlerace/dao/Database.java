@@ -34,7 +34,7 @@ public class Database {
         try {
             Class.forName("org.sqlite.JDBC");
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(HighscoreDao.class.getName()).log(Level.SEVERE, null, ex);
+            //Logger.getLogger(HighscoreDao.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         Connection c;
@@ -81,7 +81,7 @@ public class Database {
         try {
             Class.forName("org.sqlite.JDBC");
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(HighscoreDao.class.getName()).log(Level.SEVERE, null, ex);
+            //Logger.getLogger(HighscoreDao.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         Connection c = getConnection();

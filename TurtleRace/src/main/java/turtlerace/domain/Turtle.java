@@ -3,15 +3,15 @@ package turtlerace.domain;
 
 
 public class Turtle {
-    private int ID;
+    private int id;
     private int distance;
     public int advantage;
     public int support;
     public int neutral;
     public int disadvantage;
     
-    public Turtle(int ID) {
-        this.ID = ID;
+    public Turtle(int id) {
+        this.id = id;
         
         // Randomize attributes
         advantage = (int) (Math.random() * 5);
@@ -23,7 +23,7 @@ public class Turtle {
     
     
     public int getID() {
-        return ID;
+        return id;
     }
     
     public int getDistance() {

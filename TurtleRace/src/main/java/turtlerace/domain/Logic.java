@@ -26,13 +26,12 @@ public class Logic {
     
     
     
-    public Logic() throws ClassNotFoundException {
-        database = new Database("jdbc:sqlite:gamedb.db");
-        
+    public Logic() {
         try {
+            database = new Database("jdbc:sqlite:gamedb.db");
             database.checkDatabaseValidity();
         } catch (Exception ex) {
-            Logger.getLogger(Logic.class.getName()).log(Level.SEVERE, null, ex);
+            //Logger.getLogger(Logic.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         scoreDao = new HighscoreDao(database);
@@ -51,7 +50,7 @@ public class Logic {
                     return true;
                 }
             } catch (SQLException ex) {
-                Logger.getLogger(Logic.class.getName()).log(Level.SEVERE, null, ex);
+                //Logger.getLogger(Logic.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         
@@ -63,7 +62,7 @@ public class Logic {
         try {
             scoreDao.saveOrUpdate(new Highscore(-1, player.getName(), player.getHighscore()));
         } catch (SQLException ex) {
-            Logger.getLogger(Logic.class.getName()).log(Level.SEVERE, null, ex);
+            //Logger.getLogger(Logic.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
@@ -99,8 +98,6 @@ public class Logic {
     }
     
     public void endRace(Turtle turtle) {
-        //System.out.println("Debug- winner turtle: " + (turtle.getID() + 1));
-        //System.out.println("Debug- round: " + round);
         
         if (betTurtle == turtle.getID()) {
             player.changeMoney(bet * 3);
@@ -118,7 +115,6 @@ public class Logic {
     }
     
     public boolean raceStep() {
-        //System.out.println("Debug- Step " + race.getStep());
         
         Turtle turtle = race.step();
         if (turtle != null) {
@@ -139,7 +135,7 @@ public class Logic {
     }
     
     public void setBet(Integer bet, int turtle) {
-        this.betTurtle = turtle-1;
+        this.betTurtle = turtle - 1;
         this.bet = bet;
     }
     
@@ -188,7 +184,7 @@ public class Logic {
         try {
             return scoreDao.findAll();
         } catch (SQLException ex) {
-            Logger.getLogger(Logic.class.getName()).log(Level.SEVERE, null, ex);
+            //Logger.getLogger(Logic.class.getName()).log(Level.SEVERE, null, ex);
             return null;
         }
     }
@@ -198,7 +194,7 @@ public class Logic {
         try {
             database.resetDatabase();
         } catch (Exception ex) {
-            Logger.getLogger(Logic.class.getName()).log(Level.SEVERE, null, ex);
+            //Logger.getLogger(Logic.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     

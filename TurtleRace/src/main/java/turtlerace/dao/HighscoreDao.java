@@ -24,12 +24,9 @@ public class HighscoreDao implements Dao<Highscore, String> {
     public Highscore findOne(String name) throws SQLException {
         try {
             database.checkDatabaseValidity();
-        } catch (Exception ex) {}
-        
-        try {
             Class.forName("org.sqlite.JDBC");
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(HighscoreDao.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) {
+            //Logger.getLogger(HighscoreDao.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         Connection conn = database.getConnection();
@@ -60,12 +57,9 @@ public class HighscoreDao implements Dao<Highscore, String> {
     public List<Highscore> findAll() throws SQLException {
         try {
             database.checkDatabaseValidity();
-        } catch (Exception ex) {}
-        
-        try {
             Class.forName("org.sqlite.JDBC");
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(HighscoreDao.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) {
+            //Logger.getLogger(HighscoreDao.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         Connection conn = database.getConnection();
@@ -98,12 +92,9 @@ public class HighscoreDao implements Dao<Highscore, String> {
         
         try {
             database.checkDatabaseValidity();
-        } catch (Exception ex) {}
-        
-        try {
             Class.forName("org.sqlite.JDBC");
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(HighscoreDao.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) {
+            //Logger.getLogger(HighscoreDao.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         Connection conn = database.getConnection();
@@ -127,12 +118,9 @@ public class HighscoreDao implements Dao<Highscore, String> {
         
         try {
             database.checkDatabaseValidity();
-        } catch (Exception ex) {}
-        
-        try {
             Class.forName("org.sqlite.JDBC");
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(HighscoreDao.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) {
+            //Logger.getLogger(HighscoreDao.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         Connection conn = database.getConnection();
