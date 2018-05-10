@@ -21,6 +21,10 @@ Ideally the player can learn the effects of each piece of information and estima
 
 ## Functionality
 
+### General
+
+- The game is able to notice a missing database file, and generate a new one.
+
 ### Menus
 
 - Highscores of previous games are shown.
