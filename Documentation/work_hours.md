@@ -24,4 +24,4 @@
 |       |  1    | More tests |
 |       |  2    | Tests and dokument tuning |
 |       |  1    | Finishing touches |
-| yht   | 53    |  | 
+| yht   | 53    | Done | 
