@@ -15,7 +15,7 @@ A game about racing turtles. You as the player are provided information of the r
 
 ## Releases
 
-[Final product]()
+[Final product](https://github.com/SirVeggie/otm-harjoitustyo/releases/tag/v1.0)
 
 ## Command line actions
 
