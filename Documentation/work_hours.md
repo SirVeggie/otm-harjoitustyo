@@ -21,8 +21,7 @@
 |       |  1    | Fixing code |
 |       |  4    | Creating JUnit tests |
 |       |  2    | Writing architecture document |
-|       |  x    |  |
-|       |  x    |  |
-|       |  x    |  |
-|       |  x    |  |
-| yht   |  ?    |  | 
+|       |  1    | More tests |
+|       |  2    |  |
+|       |  1    |  |
+| yht   | 53    |  | 
