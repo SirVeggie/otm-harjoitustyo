@@ -22,6 +22,6 @@
 |       |  4    | Creating JUnit tests |
 |       |  2    | Writing architecture document |
 |       |  1    | More tests |
-|       |  2    |  |
-|       |  1    |  |
+|       |  2    | Tests and dokument tuning |
+|       |  1    | Finishing touches |
 | yht   | 53    |  | 
