@@ -5,7 +5,7 @@
 A game that provides entertainment for people that have nothing better to do.
 
 The game is about turtle races. You try to guess which turtle will win the race based on the provided information. 
-Ideally the player can learn the effects of each piece of information and estimate the winner based on them with 100% accuracy.
+Ideally the player could learn the effects of each piece of information by observing the turtle behaviour and estimate the winner based on them with 100% accuracy.
 
 
 ## Interface
