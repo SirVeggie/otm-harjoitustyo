@@ -49,4 +49,7 @@ Ideally the player can learn the effects of each piece of information and estima
 - If money reaches zero at the end of a round, the player loses and receives the score of 0.
 - After a race it is possible to investigate the results before continuing to the next round.
 - After the game the player is notified of their final score.
+
+### Configuration
+
 - The amount of rounds or turtles can be changed by editing the config file.
