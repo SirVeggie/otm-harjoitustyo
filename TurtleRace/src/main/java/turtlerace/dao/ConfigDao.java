@@ -52,34 +52,57 @@ public class ConfigDao {
         BufferedReader br = new BufferedReader(fr);
         
         for (int i = 0; (line = br.readLine()) != null; i++) {
-            if (i == 0) {
-                rounds = retrieve(line);
-            } else if (i == 1) {
-                turtles = retrieve(line);
+            if (checkValues(line, i)) {
+                return;
             }
         }
 
         br.close();
         fr.close();
     }
+    private boolean checkValues(String line, int i) {
+        if (i == 0) {
+            int temp = retrieve(line);
+            if (temp < 1) {
+                System.out.println("Config value out of bounds");
+                createFile();
+                return true;
+            }
+            rounds = temp;
+        } else if (i == 1) {
+            int temp = retrieve(line);
+            if (temp < 3 || temp > 12) {
+                System.out.println("Config value out of bounds");
+                createFile();
+                return true;
+            }
+            turtles = temp;
+        }
+        
+        return false;
+    }
+    
     
     private void createFile() {
         System.out.println("Creating config");
         try {
             FileWriter fw = new FileWriter(file);
-            fw.write("Rounds=5" + System.getProperty("line.separator"));
-            fw.write("Turtles=5");
+            fw.write("Rounds=5; (1 ->)" + System.getProperty("line.separator"));
+            fw.write("Turtles=5; (3-12)");
             fw.close();
         } catch (Exception ex) {
             System.out.println("Cannot create the config file");
         }
     }
     
+    
     private int retrieve(String line) {
         try {
-            return Integer.valueOf(line.substring(line.indexOf("=") + 1));
+            int start = line.indexOf("=") + 1;
+            int end = line.indexOf(";");
+            return Integer.valueOf(line.substring(start, end));
         } catch (Exception e) {
-            System.out.println("Corrupted file, resetting config");
+            System.out.println("Corrupted config");
             createFile();
             return 5;
         }

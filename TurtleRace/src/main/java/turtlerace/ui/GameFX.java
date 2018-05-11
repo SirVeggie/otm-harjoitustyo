@@ -227,7 +227,7 @@ public class GameFX extends Application {
         
         raceInformation.getChildren().add(startRace);
         raceInformation.getChildren().add(betReady);
-        raceInformation.setAlignment(Pos.TOP_CENTER);
+        raceInformation.setAlignment(Pos.CENTER);
         
         VBox alignment = new VBox();
         alignment.getChildren().add(gameWindow);
