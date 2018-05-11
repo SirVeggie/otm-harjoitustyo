@@ -17,5 +17,12 @@
 |       |  2    | JavaDocs |
 |       |  4    | Adding the configurable rounds/turtles feature and more polish |
 |       |  1    | Fixing stuff |
-| 11.5. |  x    |  |
+| 11.5. |  1    | Improving configDao |
+|       |  x    |  |
+|       |  x    |  |
+|       |  x    |  |
+|       |  x    |  |
+|       |  x    |  |
+|       |  x    |  |
+|       |  x    |  |
 | yht   |  ?    |  | 
