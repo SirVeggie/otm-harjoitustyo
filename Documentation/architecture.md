@@ -44,6 +44,28 @@ RaceLogic only has a single method to calculate the given turtle's movement for 
 
 ## Permanent data storage
 
+The game has permanent storage in two forms. One is the highscore database, which is accessed by the HighscoreDao class which implements the Dao interface. The Database class is there to maintain the database. It can be use to re-create the database essentially resetting it.
+It can also be used to check if the database is valid; the file exists, and it contains the necessary tables.
+
+The other form of permanent storage is the config file, which is used to change the amount of turtles or rounds in the game. 
+It is accessed through the configDao class, which is independent from the other three dao classes. It can also notice if the required file is missing and create it.
+
+### Files
+
+The files that are used are created in the same directory as the project or jar file.
+
+The database file is gamedb.db and the config file is config.txt.
+
+gamedb.db's table structure is like so: CREATE TABLE Highscore (id integer PRIMARY KEY, name varchar(100), money integer);
+
+config.txt's data is saved on two lines:
+
+Rounds=5; (1 ->)
+
+Turtles=5; (3-12)
+
+Only the number between characters '=' and ';' is read, everything else is just for clarity.
+
 
 
 ## Weaknesses
