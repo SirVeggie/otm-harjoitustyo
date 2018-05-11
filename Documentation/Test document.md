@@ -17,6 +17,8 @@ Automatic testing of the Dao classes is low, but there has been a lot of manual 
 
 Tests cover quite a lot of basic functionality, but dao classes and integrated testing is low.
 
+<img src="https://github.com/SirVeggie/otm-harjoitustyo/blob/master/Documentation/Pictures/Test_coverage.png">
+
 ## System testing
 
 The system testing has been done manually.
