@@ -1,6 +1,6 @@
 # Turtle Race
 
-A game about racing turtles. You as the player are provided information of the racing turtles, which you are to use to deduce how well each turtle will perform in the race. Essentially to correctly choose the winning turtle.
+A game about racing turtles. You as the player are provided information of the racing turtles, which you are to use to deduce how well each turtle will perform in the race. Bet on the turtles and see how high of a score you can get.
 
 ## Documentation
 [Work hours](https://github.com/SirVeggie/otm-harjoitustyo/blob/master/Documentation/work_hours.md)
