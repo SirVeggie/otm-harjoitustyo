@@ -1,4 +1,4 @@
-# työaikakirjanpito
+# Time bookkeeping
 
 | Date  | Hours | What was done |
 | :----:|:------| :-----|
