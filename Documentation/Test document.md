@@ -36,4 +36,4 @@ If the additional files do not have a problem, the game is most likely going to 
 
 ## Problems
 
-If the game does not have access to the predetermined file paths, then it will most likely not work.
+If the game does not have access to the predetermined file paths, then it will most likely not work properly or at all.
