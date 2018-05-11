@@ -8,9 +8,9 @@ Place Turtlerace.jar in an empty folder.
 
 Run the jar file by double clicking on it, or use the command: java -jar Turtlerace.jar
 
-It will now generate a database file _gamedb.db_ for saving data.
+It will now generate a database file _gamedb.db_ for saving data, and the _config.txt_ for configuring the game.
 
-You can delete the database file whenever to reset your data.
+You can delete the database file whenever to reset your data, or delete the config file to go back to default values.
 
 ## How to play
 
@@ -34,6 +34,6 @@ Try to use the provided information to your advantage when placing the bet.
 
 If the bet was valid, you can press the _Start race_ button to start the race, and see if you were correct.
 
-The game will last 5 rounds.
+The game will last multiple rounds.
 
 To save your highscore, press the _Exit and save score_ button in the Game menu after playing. It will save the session's highest score.
