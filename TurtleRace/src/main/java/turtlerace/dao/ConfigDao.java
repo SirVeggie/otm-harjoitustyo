@@ -73,6 +73,11 @@ public class ConfigDao {
     }
     
     private int retrieve(String line) {
-        return Integer.valueOf(line.substring(line.indexOf("=") + 1));
+        try {
+            return Integer.valueOf(line.substring(line.indexOf("=") + 1));
+        } catch (Exception e) {
+            createFile();
+            return 5;
+        }
     }
 }
