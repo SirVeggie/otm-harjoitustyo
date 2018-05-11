@@ -27,9 +27,7 @@ public class LogicTest {
             
             file = new File("Test.db");
             Files.deleteIfExists(file.toPath());
-        } catch (IOException ex) {
-            Logger.getLogger(LogicTest.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        } catch (Exception ex) { }
     }
     
     @Before

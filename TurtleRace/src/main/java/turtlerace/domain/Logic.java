@@ -24,7 +24,7 @@ public class Logic {
     
     
     public Logic() {
-        database = new Database("jdbc:sqlite:gamedb.db");
+        database = new Database("gamedb.db");
         database.checkDatabaseValidity();
         scoreDao = new HighscoreDao(database);
         config = new ConfigDao("config.txt");
@@ -36,7 +36,7 @@ public class Logic {
     }
     
     public Logic(String testFile) {
-        database = new Database("jdbc:sqlite:" + testFile + ".db");
+        database = new Database(testFile + ".db");
         database.checkDatabaseValidity();
         scoreDao = new HighscoreDao(database);
         config = new ConfigDao(testFile + ".txt");

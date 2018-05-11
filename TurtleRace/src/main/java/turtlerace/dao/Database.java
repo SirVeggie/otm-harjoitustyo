@@ -9,10 +9,12 @@ import java.sql.SQLException;
 public class Database {
     
     private String databaseAddress;
+    private String fileAddress;
     String[] tables;
     
     public Database(String databaseAddress) {
-        this.databaseAddress = databaseAddress;
+        this.databaseAddress = "jdbc:sqlite:" + databaseAddress;
+        this.fileAddress = databaseAddress;
 
         //Default tables
         tables = new String[1];
@@ -34,9 +36,6 @@ public class Database {
      * Checks if the database file exists, and if the file has the necessary tables.
      */
     public void checkDatabaseValidity() {
-        System.out.println("");
-        System.out.println("Checking database validity");
-        
         try {
             Class.forName("org.sqlite.JDBC");
             
@@ -52,7 +51,6 @@ public class Database {
             for (String table : tables) {
                 String tableName = table.split(" ")[0];
                 try {
-                    System.out.println("Checking tables");
                     stmt = c.prepareStatement("Select * from " + tableName);
                     stmt.execute();
                     stmt.close();
@@ -67,7 +65,6 @@ public class Database {
             }
 
             c.close();
-            System.out.println("Database is valid");
         } catch (Exception e) {
             System.out.println("Validity check failed");
         }
@@ -79,7 +76,7 @@ public class Database {
     public void resetDatabase() {
         System.out.println("Resetting database");
         
-        File current = new File("gamedb.db");
+        File current = new File(fileAddress);
 
         current.delete();
         

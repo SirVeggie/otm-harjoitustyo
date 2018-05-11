@@ -152,7 +152,8 @@ public class HighscoreDao implements Dao<Highscore, String> {
         
         try {
             Connection conn = database.getConnection();
-            PreparedStatement stmt = conn.prepareStatement("DELETE FROM Highscore WHERE Highscore.name = " + name);
+            PreparedStatement stmt = conn.prepareStatement("DELETE FROM Highscore WHERE name = ?");
+            stmt.setObject(1, name);
 
             stmt.executeUpdate();
             stmt.close();
