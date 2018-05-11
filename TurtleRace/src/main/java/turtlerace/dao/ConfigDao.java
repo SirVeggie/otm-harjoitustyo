@@ -54,7 +54,7 @@ public class ConfigDao {
         for (int i = 0; (line = br.readLine()) != null; i++) {
             if (i == 0) {
                 rounds = retrieve(line);
-            } else {
+            } else if (i == 1) {
                 turtles = retrieve(line);
             }
         }

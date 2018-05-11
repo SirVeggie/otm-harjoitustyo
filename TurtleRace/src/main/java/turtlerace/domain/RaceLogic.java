@@ -19,7 +19,7 @@ public class RaceLogic {
         this.step = step;
         this.moveAmount = 5;
         
-        if (turtle.neutral == 0) {
+        if (turtle.getNeutral() == 0) {
             
             applySupport();
             
@@ -38,7 +38,7 @@ public class RaceLogic {
     
     
     private void applyAdvantage() {
-        switch (turtle.advantage) {
+        switch (turtle.getAdvantage()) {
             case 0:
                 advantage1();
                 break;
@@ -62,7 +62,7 @@ public class RaceLogic {
     }
     
     private void applyDisadvantage() {
-        switch (turtle.disadvantage) {
+        switch (turtle.getHandicap()) {
             case 0:
                 disadvantage1();
                 break;
@@ -86,7 +86,7 @@ public class RaceLogic {
     }
     
     private void applySupport() {
-        switch (turtle.support) {
+        switch (turtle.getSupport()) {
             case 0:
                 support1();
                 break;
@@ -109,7 +109,7 @@ public class RaceLogic {
     // Effects
     
     private void advantage1() {
-        if (turtle.neutral == 1) {
+        if (turtle.getNeutral() == 1) {
             moveAmount = 14;
         }
         
@@ -117,7 +117,7 @@ public class RaceLogic {
     }
     
     private void advantage2() {
-        if (turtle.neutral == 1) {
+        if (turtle.getNeutral() == 1) {
             if (step == 1) {
                 moveAmount = 120;
             }
@@ -136,7 +136,7 @@ public class RaceLogic {
     }
     
     private void advantage3() {
-        if (turtle.neutral == 1) {
+        if (turtle.getNeutral() == 1) {
             if (step % 15 == 0) {
                 moveAmount = 40;
             }
@@ -149,7 +149,7 @@ public class RaceLogic {
     }
     
     private void advantage4() {
-        if (turtle.neutral == 1) {
+        if (turtle.getNeutral() == 1) {
             if (step <= 15) {
                 moveAmount = 2;
             }
@@ -168,7 +168,7 @@ public class RaceLogic {
     }
     
     private void advantage5() {
-        if (turtle.support == 2) {
+        if (turtle.getSupport() == 2) {
             if (step == 40) {
                 moveAmount = 80;
             }
@@ -178,7 +178,7 @@ public class RaceLogic {
             return;
         }
         
-        if (turtle.neutral == 1) {
+        if (turtle.getNeutral() == 1) {
             if (step == 40) {
                 moveAmount = 120;
             }
@@ -210,12 +210,12 @@ public class RaceLogic {
     //-----------------------------------------------
     
     private void disadvantage1() {
-        if (turtle.support == 2) {
+        if (turtle.getSupport() == 2) {
             moveAmount -= 1;
             return;
         }
         
-        if (turtle.neutral == 1) {
+        if (turtle.getNeutral() == 1) {
             moveAmount -= 3;
             return;
         }
@@ -224,14 +224,14 @@ public class RaceLogic {
     }
     
     private void disadvantage2() {
-        if (turtle.support == 2) {
+        if (turtle.getSupport() == 2) {
             if (step <= 2) {
                 moveAmount = 0;
             }
             return;
         }
         
-        if (turtle.neutral == 1) {
+        if (turtle.getNeutral() == 1) {
             if (step <= 4) {
                 moveAmount = 0;
             }
@@ -244,14 +244,14 @@ public class RaceLogic {
     }
     
     private void disadvantage3() {
-        if (turtle.support == 2) {
+        if (turtle.getSupport() == 2) {
             if (step % 10 == 0) {
                 moveAmount += -5;
             }
             return;
         }
         
-        if (turtle.neutral == 1) {
+        if (turtle.getNeutral() == 1) {
             if (step % 10 == 0) {
                 moveAmount += -13;
             }
@@ -264,7 +264,7 @@ public class RaceLogic {
     }
     
     private void disadvantage4() {
-        if (turtle.support == 2) {
+        if (turtle.getSupport() == 2) {
             if (step >= 40 && step < 60) {
                 moveAmount /= 2;
                 moveAmount += 2;
@@ -272,7 +272,7 @@ public class RaceLogic {
             return;
         }
         
-        if (turtle.neutral == 1) {
+        if (turtle.getNeutral() == 1) {
             if (step >= 40 && step < 60) {
                 moveAmount /= 3;
             }
@@ -285,14 +285,14 @@ public class RaceLogic {
     }
     
     private void disadvantage5() {
-        if (turtle.support == 2) {
+        if (turtle.getSupport() == 2) {
             if (step == 10) {
                 moveAmount = -20;
             }
             return;
         }
         
-        if (turtle.neutral == 1) {
+        if (turtle.getNeutral() == 1) {
             if (step == 20) {
                 moveAmount = -65;
             }

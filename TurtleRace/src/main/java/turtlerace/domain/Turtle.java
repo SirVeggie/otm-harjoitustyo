@@ -4,11 +4,10 @@ package turtlerace.domain;
 
 public class Turtle {
     private int id;
-    private int distance;
-    public int advantage;
-    public int support;
-    public int neutral;
-    public int disadvantage;
+    private int advantage;
+    private int support;
+    private int neutral;
+    private int handicap;
     
     public Turtle(int id) {
         this.id = id;
@@ -17,7 +16,7 @@ public class Turtle {
         advantage = (int) (Math.random() * 5);
         support = (int) (Math.random() * 4);
         neutral = (int) (Math.random() * 5);
-        disadvantage = (int) (Math.random() * 5);
+        handicap = (int) (Math.random() * 5);
     }
     
     
@@ -26,12 +25,20 @@ public class Turtle {
         return id;
     }
     
-    public int getDistance() {
-        return distance;
+    public int getAdvantage() {
+        return advantage;
     }
     
-    public void setDistance(int value) {
-        distance = value;
+    public int getSupport() {
+        return support;
+    }
+    
+    public int getNeutral() {
+        return neutral;
+    }
+    
+    public int getHandicap() {
+        return handicap;
     }
     
     
@@ -125,7 +132,7 @@ public class Turtle {
     private String applyDisadvantageDesc() {
         String desc = "Handicap: ";
         
-        switch (disadvantage) {
+        switch (handicap) {
             case 0:
                 desc += "Slow";
                 break;
@@ -142,7 +149,7 @@ public class Turtle {
                 desc += "Unstable";
                 break;
             default:
-                desc += "error, " + disadvantage;
+                desc += "error, " + handicap;
                 break;
         }
         

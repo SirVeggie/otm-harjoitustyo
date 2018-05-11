@@ -3,8 +3,6 @@ package turtlerace.domain;
 import java.util.List;
 import turtlerace.dao.*;
 
-
-
 public class Logic {
     private Race race;
     private Player player;
@@ -149,23 +147,16 @@ public class Logic {
         return false;
     }
     
-    // Getters and Setters
-    public void setMaxRounds(int rounds) {
-        maxRounds = rounds;
-    }
     
+    
+    // Getters and Setters
     public int getMaxRounds() {
         return maxRounds;
-    }
-    
-    public void setMaxTurtles(int turtles) {
-        maxTurtles = turtles;
     }
     
     public int getMaxTurtles() {
         return maxTurtles;
     }
-    
     
     public List<Turtle> getTurtles() {
         return race.getTurtles();
@@ -206,24 +197,13 @@ public class Logic {
     
     public Player getPlayer() {
         return player;
-    }
-    
-    // These simplify code a bit
-    public List<Integer> getPlayerScores() {
-        return player.getScores();
-    }
-    
-    public int getPlayerHighscore() {
-        return player.getHighscore();
-    }
-    
-    public String getPlayerName() {
-        return player.getName();
-    }
+    }    
     
     public List<Highscore> getHighscores() {
         return scoreDao.findAll();
     }
+    
+    
     
     // Other logic tools
     

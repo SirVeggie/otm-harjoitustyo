@@ -116,14 +116,14 @@ public class GameFX extends Application {
         
         VBox scoreList = new VBox();
         
-        Button reset_btn = new Button("Reset highscores");
+        Button scoreReset_btn = new Button("Reset highscores");
         Button scoreBack_btn = new Button("Back");
         
-        reset_btn.setMaxWidth(120);
+        scoreReset_btn.setMaxWidth(120);
         scoreBack_btn.setMaxWidth(120);
         
         scoreButtons.getChildren().add(scoreList);
-        scoreButtons.getChildren().add(reset_btn);
+        scoreButtons.getChildren().add(scoreReset_btn);
         scoreButtons.getChildren().add(scoreBack_btn);
         scoreButtons.setAlignment(Pos.CENTER);
         
@@ -390,12 +390,12 @@ public class GameFX extends Application {
         });
         
         statistics_btn.setOnAction((ActionEvent event) -> {
-            playerName_lbl.setText(logic.getPlayerName());
-            playerHighscore_lbl.setText("" + logic.getPlayerHighscore());
+            playerName_lbl.setText(logic.getPlayer().getName());
+            playerHighscore_lbl.setText("" + logic.getPlayer().getHighscore());
             
             statsScores.getChildren().clear();
             
-            List<Integer> oldScores = logic.getPlayerScores();
+            List<Integer> oldScores = logic.getPlayer().getScores();
             
             for (int i = 0; i < oldScores.size(); i++) {
                 Label score_lbl = new Label("" + oldScores.get(i));
@@ -417,7 +417,7 @@ public class GameFX extends Application {
         
         // Score screen actions
         // ---------------------------------------------------------------------
-        reset_btn.setOnAction((ActionEvent event) -> {
+        scoreReset_btn.setOnAction((ActionEvent event) -> {
             logic.resetDatabase();
             scoreList.getChildren().clear();
         });
@@ -440,7 +440,6 @@ public class GameFX extends Application {
         
         // Race screen actions
         // ---------------------------------------------------------------------
-        
         for (int i = 0; i < logic.getMaxTurtles(); i++) {
             turtleButtons.get(i).setOnAction((ActionEvent event) -> {
                 if (!logic.getRaceReady()) {
