@@ -18,9 +18,9 @@
 |       |  4    | Adding the configurable rounds/turtles feature and more polish |
 |       |  1    | Fixing stuff |
 | 11.5. |  1    | Improving configDao |
-|       |  x    |  |
-|       |  x    |  |
-|       |  x    |  |
+|       |  1    | Fixing code |
+|       |  4    | Creating JUnit tests |
+|       |  2    | Writing architecture document |
 |       |  x    |  |
 |       |  x    |  |
 |       |  x    |  |
