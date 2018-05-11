@@ -11,13 +11,11 @@ Some classes have extra methods implemented to help perform better testing.
 
 ### Dao
 
-Automatic testing of the Dao classes is minimal, but there has been a lot of manual testing.
+Automatic testing of the Dao classes is low, but there has been a lot of manual testing.
 
 ### Test coverage
 
-Here's an overview of the test coverage:
-
-image here
+Tests cover quite a lot of basic functionality, but dao classes and integrated testing is low.
 
 ## System testing
 
