@@ -15,7 +15,7 @@
 |       |  2    | Checking code requirements and cleaning code |
 |       |  3    | Miscellaneous work / doing a bit of everything |
 |       |  2    | JavaDocs |
-|       |  4    | Adding the configurable rounds/turtles feature and more polish |
+|       |  3    | Adding the configurable rounds/turtles feature and more polish |
 | 11.5. |  x    |  |
 |       |  x    |  |
 | yht   |  ?    |  | 
