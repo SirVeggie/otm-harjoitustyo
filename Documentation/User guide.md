@@ -10,7 +10,7 @@ Run the jar file by double clicking on it, or use the command: java -jar Turtler
 
 It will now generate a database file _gamedb.db_ for saving data, and the _config.txt_ for configuring the game.
 
-You can delete the database file whenever to reset your data, or delete the config file to go back to default values.
+You can delete the database file whenever to reset your data, or delete the config file to go back to default config values.
 
 ## How to play
 
