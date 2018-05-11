@@ -1,14 +1,16 @@
 package turtlerace.domain;
 
 import java.util.List;
-import turtlerace.dao.Database;
-import turtlerace.dao.HighscoreDao;
+import turtlerace.dao.*;
 
 
 
 public class Logic {
     private Race race;
     private Player player;
+    
+    private int maxRounds;
+    private int maxTurtles;
     
     private boolean animate;
     private boolean raceReady;
@@ -19,16 +21,20 @@ public class Logic {
     private int counter;
     
     private Database database;
+    private ConfigDao config;
     private HighscoreDao scoreDao;
     
     
     public Logic() {
         database = new Database("jdbc:sqlite:gamedb.db");
         database.checkDatabaseValidity();
-        
         scoreDao = new HighscoreDao(database);
+        config = new ConfigDao("config.txt");
         
         raceReady = false;
+        
+        maxRounds = config.getRounds();
+        maxTurtles = config.getTurtles();
     }
     
     
@@ -56,13 +62,15 @@ public class Logic {
         scoreDao.saveOrUpdate(new Highscore(-1, player.getName(), player.getHighscore()));
     }
     
+    
+    
     // Race specific methods
     
     /**
      * Creates a new race and increases round count. Enables race buttons.
      */
     public void newRound() {
-        race = new Race(5);
+        race = new Race(maxTurtles);
         raceReady = true;
         round++;
     }
@@ -74,7 +82,7 @@ public class Logic {
     public boolean nextRound() {
         
         // Checks if it should continue to the next round
-        if (round < 5) {
+        if (round < maxRounds) {
             newRound();
             return true;
         }
@@ -142,6 +150,23 @@ public class Logic {
     }
     
     // Getters and Setters
+    public void setMaxRounds(int rounds) {
+        maxRounds = rounds;
+    }
+    
+    public int getMaxRounds() {
+        return maxRounds;
+    }
+    
+    public void setMaxTurtles(int turtles) {
+        maxTurtles = turtles;
+    }
+    
+    public int getMaxTurtles() {
+        return maxTurtles;
+    }
+    
+    
     public List<Turtle> getTurtles() {
         return race.getTurtles();
     }
