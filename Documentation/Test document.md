@@ -1,4 +1,4 @@
-# Software testing
+# Game testing
 
 ## Component testing and component integration testing
 
