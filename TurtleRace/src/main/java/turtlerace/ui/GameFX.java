@@ -259,7 +259,7 @@ public class GameFX extends Application {
         Scene mainMenu = new Scene(mainPane, 1280, 720);
         Scene gameMenu = new Scene(gamePane, 1280, 720);
         Scene nameScreen = new Scene(namePane, 1280, 720);
-        Scene raceScreen = new Scene(racePane, 1280, 720);
+        Scene raceScreen = new Scene(racePane);
         Scene scoreScreen = new Scene(scorePane, 1280, 720);
         Scene statisticsScreen = new Scene(statsPane, 1280, 720);
         Scene endScreen = new Scene(endPane, 1280, 720);
@@ -458,7 +458,7 @@ public class GameFX extends Application {
                 
                 // If player has enough money
                 if (bet <= logic.getPlayer().getMoney() && bet > 0) {
-                    logic.setBet(bet, Integer.valueOf(index));
+                    logic.setBet(bet, Integer.valueOf(index) - 1);
                     betReady.setText("Bet is ready");
                 } else {
                     betAmount_fld.setText("Bet not valid");

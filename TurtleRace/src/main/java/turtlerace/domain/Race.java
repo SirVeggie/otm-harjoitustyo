@@ -69,4 +69,10 @@ public class Race {
     public int getStep() {
         return step;
     }
+    
+    
+    // Test methods
+    public void setDistances(List<Integer> distances) {
+        this.distances = distances;
+    }
 }

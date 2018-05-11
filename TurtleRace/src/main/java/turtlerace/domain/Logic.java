@@ -35,6 +35,18 @@ public class Logic {
         maxTurtles = config.getTurtles();
     }
     
+    public Logic(String testFile) {
+        database = new Database("jdbc:sqlite:" + testFile + ".db");
+        database.checkDatabaseValidity();
+        scoreDao = new HighscoreDao(database);
+        config = new ConfigDao(testFile + ".txt");
+        
+        raceReady = false;
+        
+        maxRounds = config.getRounds();
+        maxTurtles = config.getTurtles();
+    }
+    
     
     
     /**
@@ -167,7 +179,7 @@ public class Logic {
     }
     
     public void setBet(Integer bet, int turtle) {
-        this.betTurtle = turtle - 1;
+        this.betTurtle = turtle;
         this.bet = bet;
     }
     
@@ -222,5 +234,15 @@ public class Logic {
         counter++;
         
         return counter;
+    }
+    
+    
+    // Test methods
+    public void setPlayer(Player player) {
+        this.player = player;
+    }
+    
+    public void deleteScore(String name) {
+        scoreDao.delete(name);
     }
 }

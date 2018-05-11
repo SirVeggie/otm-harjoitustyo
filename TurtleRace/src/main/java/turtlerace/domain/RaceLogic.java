@@ -6,6 +6,11 @@ public class RaceLogic {
     private Turtle turtle;
     private int moveAmount;
     private int step;
+    private int initialMove;
+    
+    public RaceLogic() {
+        initialMove = 5;
+    }
     
     
     /**
@@ -17,7 +22,7 @@ public class RaceLogic {
     public int moveTurtle(int step, Turtle turtle) {
         this.turtle = turtle;
         this.step = step;
-        this.moveAmount = 5;
+        this.moveAmount = initialMove;
         
         if (turtle.getNeutral() == 0) {
             
@@ -302,5 +307,30 @@ public class RaceLogic {
         if (step == 10) {
             moveAmount = -50;
         }
+    }
+    
+    
+    
+    // Test methods
+    /**
+     * Used for testing
+     * @return Returns moveAmount of 01x4 on step stp
+     */
+    public int apply01x4(int stp, int neut) {
+        moveAmount = initialMove;
+        step = stp;
+        
+        Turtle testTurtle = new Turtle(0);
+        testTurtle.setSupport(1);
+        testTurtle.setNeutral(neut);
+        turtle = testTurtle;
+        
+        if (neut != 0) {
+            advantage1();
+            disadvantage5();
+        }
+        support2();
+        
+        return moveAmount;
     }
 }

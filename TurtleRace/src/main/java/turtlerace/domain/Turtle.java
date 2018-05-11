@@ -55,7 +55,7 @@ public class Turtle {
         
         desc += applyNeutralDesc();
         
-        desc += applyDisadvantageDesc();
+        desc += applyHandicapDesc();
         
         return desc;
     }
@@ -129,7 +129,7 @@ public class Turtle {
         return desc;
     }
     
-    private String applyDisadvantageDesc() {
+    private String applyHandicapDesc() {
         String desc = "Handicap: ";
         
         switch (handicap) {
@@ -154,5 +154,24 @@ public class Turtle {
         }
         
         return desc;
+    }
+    
+    
+    
+    // Test methods
+    public void setAdvantage(int advantage) {
+        this.advantage = advantage;
+    }
+    
+    public void setSupport(int support) {
+        this.support = support;
+    }
+    
+    public void setNeutral(int neutral) {
+        this.neutral = neutral;
+    }
+    
+    public void setHandicap(int handicap) {
+        this.handicap = handicap;
     }
 }

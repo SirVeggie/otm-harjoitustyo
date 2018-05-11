@@ -1,5 +1,5 @@
 
-package turtlerace.domain;
+package turtlerace.ui;
 
 import turtlerace.ui.GameFX;
 
