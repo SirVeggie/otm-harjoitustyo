@@ -13,6 +13,7 @@ public class Main {
         
         game.play(args);
         
+        System.out.println("");
         System.out.println("Game end");
     }
 }

@@ -34,8 +34,8 @@ public class Database {
      * Checks if the database file exists, and if the file has the necessary tables.
      */
     public void checkDatabaseValidity() {
-
-        System.out.println("Checking database validity:");
+        System.out.println("");
+        System.out.println("Checking database validity");
         
         try {
             Class.forName("org.sqlite.JDBC");
@@ -58,10 +58,8 @@ public class Database {
                     stmt.close();
 
                 } catch (Exception e) {
-                    System.out.println("Error: " + e.getMessage());
                     System.out.println("Missing table: " + tableName);
-                    System.out.println("Database is not valid. Resetting database...");
-                    System.out.println("");
+                    System.out.println("Database is not valid");
                     c.close();
                     resetDatabase();
                     break;
@@ -69,9 +67,9 @@ public class Database {
             }
 
             c.close();
-            System.out.println("Database is valid.");
+            System.out.println("Database is valid");
         } catch (Exception e) {
-            System.out.println("Validity check failed.");
+            System.out.println("Validity check failed");
         }
     }
     

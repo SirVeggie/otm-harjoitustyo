@@ -20,10 +20,9 @@ public class ConfigDao {
         this.file = file;
         
         try {
-            System.out.println("Reading file");
             readFile();
         } catch (FileNotFoundException e) {
-            System.out.println("Creating file");
+            System.out.println("Config missing");
             createFile();
             
             rounds = 5;
@@ -31,6 +30,8 @@ public class ConfigDao {
         } catch (Exception ex) {
             System.out.println("Cannot read the config file");
         }
+        
+        System.out.println("Done");
     }
     
     
@@ -44,6 +45,7 @@ public class ConfigDao {
     
     
     private void readFile() throws FileNotFoundException, IOException {
+        System.out.println("Reading config");
         String line = null;
 
         FileReader fr = new FileReader(file);
@@ -62,6 +64,7 @@ public class ConfigDao {
     }
     
     private void createFile() {
+        System.out.println("Creating config");
         try {
             FileWriter fw = new FileWriter(file);
             fw.write("Rounds=5" + System.getProperty("line.separator"));
@@ -76,6 +79,7 @@ public class ConfigDao {
         try {
             return Integer.valueOf(line.substring(line.indexOf("=") + 1));
         } catch (Exception e) {
+            System.out.println("Corrupted file, resetting config");
             createFile();
             return 5;
         }
